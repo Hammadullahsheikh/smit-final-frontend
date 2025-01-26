@@ -6,9 +6,8 @@ import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 import Logout from './pages/Logout.jsx';
 import Layout from './Layout.jsx';
-import CalculatorPage from './pages/calculatorPage.jsx';
+import CalculatorPage from './pages/CalculatorPage.jsx';
 import AdminPage from './pages/adminPage.jsx';
-import AuthGuard from './components/AuthGuard'; // Import the AuthGuard
 
 const router = createBrowserRouter([
     {
@@ -17,11 +16,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '',
-                element: (
-                    <AuthGuard>
-                        <Home />
-                    </AuthGuard>
-                ),
+                element: <Home />,
             },
             {
                 path: 'register',
@@ -37,11 +32,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'CalculatorPage',
-                element: (
-                    <AuthGuard>
-                        <CalculatorPage />
-                    </AuthGuard>
-                ),
+                element: <CalculatorPage />,
             },
             {
                 path: 'AdminPage',
