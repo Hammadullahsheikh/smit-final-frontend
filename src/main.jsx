@@ -7,7 +7,7 @@ import Register from './pages/Register.jsx';
 import Logout from './pages/Logout.jsx';
 import Layout from './Layout.jsx';
 import CalculatorPage from './pages/CalculatorPage.jsx';
-import AdminPage from './pages/adminPage.jsx';
+import AdminPage from './pages/AdminPage.jsx';
 
 const router = createBrowserRouter([
     {
